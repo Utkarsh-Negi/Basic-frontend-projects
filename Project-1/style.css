@@ -1,0 +1,13 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(170, 32, 32);
+}
+
+.box:hover {
+  opacity: 0.9;
+}
+
+.boxclicked {
+  background-color: rgb(80, 3, 3);
+}
