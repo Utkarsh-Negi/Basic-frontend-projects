@@ -1,22 +1,24 @@
+.outer {
+  margin-top: 8rem;
+}
 .front {
   display: grid;
-  grid-template-columns: repeat(20, 19px);
-  position: relative;
-  top: 100px;
-  left: 500px;
+  grid-template-columns: repeat(20, 16px);
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  /* background-color: aquamarine; */
 }
 .box {
   width: 15px;
   height: 15px;
-  /* background-color: rgb(207, 87, 87); */
-  border: 1px solid transparent;
-  margin: 0.1rem;
+  border: 1px solid rgba(65, 60, 60, 0.26);
 }
 
 .box:hover {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .boxclicked {
-  background-color: rgb(214, 20, 20);
+  background-color: rgb(0, 0, 0);
 }
