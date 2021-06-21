@@ -1,11 +1,17 @@
+.front {
+  display: grid;
+  grid-template-columns: repeat(20, auto);
+}
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(170, 32, 32);
+  width: 15px;
+  height: 15px;
+  background-color: rgb(207, 87, 87);
+  border: 1px solid black;
+  margin: 0.1rem;
 }
 
 .box:hover {
-  opacity: 0.9;
+  opacity: 0.6;
 }
 
 .boxclicked {
