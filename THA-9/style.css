@@ -1,0 +1,41 @@
+:root {
+  --primary: orange;
+  --secondary: rgb(107, 153, 156);
+  --tertiary: rgb(10, 129, 133);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--tertiary);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  text-align: center;
+  padding: 2rem;
+}
+
+#seats {
+  width: 1080px;
+  height: 600px;
+  margin: auto;
+  line-height: 0;
+}
+
+.chair {
+  width: 180px;
+  height: 85px;
+  background-color: var(--secondary);
+  border: 1px solid black;
+  display: inline-block;
+}
