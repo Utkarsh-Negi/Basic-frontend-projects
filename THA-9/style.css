@@ -38,4 +38,14 @@ p {
   background-color: var(--secondary);
   border: 1px solid black;
   display: inline-block;
+  transition: 0.4s;
+}
+
+.chair:hover {
+  background-color: grey;
+  opacity: 0.6px;
+}
+
+.select {
+  background-color: var(--primary);
 }

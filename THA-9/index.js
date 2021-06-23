@@ -6,3 +6,10 @@ for (let i = 0; i < 36; i++) {
   block.className = 'chair';
   container.appendChild(block);
 }
+var kursi = document.querySelectorAll('.chair');
+
+kursi.forEach((i) => {
+  i.addEventListener('click', () => {
+    i.classList.toggle('select');
+  });
+});
