@@ -9,10 +9,44 @@
   </head>
   <body>
     <div class="container">
-      <div class="quiz-box">
+      <div class="quizbox box">
         <h2>Show-Begins</h2>
-        <button class="btn-txt">start</button>
+        <button class="btn-txt" onclick="quizbox()">Start</button>
+      </div>
+      <div class="inbox">
+        <span class="querries">Questions</span>
+        <ul>
+          <li class="option-area">
+            <input
+              type="radio"
+              name="options"
+              id="ans1"
+              class="answer"
+              placeholder="a"
+            /><label for="ans1" id="option1"></label>
+          </li>
+          <li class="option-area">
+            <input type="radio" name="options" id="ans2" class="answer" /><label
+              for="ans2"
+              id="option2"
+            ></label>
+          </li>
+          <li class="option-area">
+            <input type="radio" name="options" id="ans3" class="answer" /><label
+              for="ans3"
+              id="option3"
+            ></label>
+          </li>
+          <li class="option-area">
+            <input type="radio" name="options" id="ans4" class="answer" /><label
+              for="ans4"
+              id="option4"
+            ></label>
+          </li>
+        </ul>
+        <button type="submit" class="button">Click to submit</button>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
