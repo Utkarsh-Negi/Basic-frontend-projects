@@ -1,54 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
 :root {
-  --first: rgb(238, 225, 51);
-  --second: rgb(255, 0, 0);
+  --first: rgb(245, 228, 0);
+  --second: rgb(253, 105, 105);
+  --third: orange;
+  --fourth: rgba(99, 245, 196, 0.932);
+  --five: white;
 }
 * {
-  margin: 0px;
+  margin: auto;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 .container {
   height: 100vh;
+  width: 100%;
   display: grid;
   place-items: center;
   padding: 1px;
-  background-image: linear-gradient(150deg, var(--first), var(--second));
+  background-image: linear-gradient(180deg, var(--third), var(--five));
 }
 
 .quizbox {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 35%;
   text-align: center;
   width: 50vh;
   padding: 5rem;
   visibility: hidden;
-  border: 1px solid;
+  border: 1px transparent;
   border-radius: 20px;
-  background-color: honeydew;
+  background-image: linear-gradient(180deg, var(--first), var(--second));
   box-shadow: none;
 }
 
 .quizbox button {
-  background-color: yellow;
+  background-image: linear-gradient(180deg, var(--first), var(--second));
   color: black;
   margin: 2rem;
   padding: 2rem;
-  /* border-style: hidden; */
+  border-style: none;
   border-radius: 50%;
+  cursor: pointer;
+  transform: 1;
 }
 
 .inbox {
-  height: 50%;
+  height: 60%;
   width: 50%;
   padding: 5rem;
   visibility: hidden;
-  border: 1px solid;
   border-radius: 20px;
-  background-color: honeydew;
+  background-image: linear-gradient(180deg, var(--first), var(--second));
   box-shadow: none;
   box-sizing: border-box;
+  color: black;
 }
 
 ul {
@@ -59,8 +68,7 @@ ul {
 li {
   list-style: none;
   padding: 0.5rem;
-  /* border: 1px solid;
-  border-radius: 1rem; */
+  /* cursor: pointer; */
 }
 
 .button {
@@ -70,30 +78,33 @@ li {
   border-radius: 1rem;
 }
 
-.option-area {
-  transform: scale(1);
-}
-.option-area:hover {
-  transform: scale(0.95);
+.sub-button {
+  background-image: linear-gradient(180deg, var(--first), var(--second));
+  border-radius: 1rem;
+  border-style: none;
 }
 
+.sub-button:hover {
+  opacity: 0.9;
+}
 .congo button {
   margin: 1rem;
   padding: 0.5rem;
-  background-color: white;
+  background-image: linear-gradient(180deg, var(--first), var(--second));
   color: black;
   border-radius: 1rem;
+  /* border-style: none; */
 }
 
 .congo {
   position: absolute;
   top: 30%;
   left: 35%;
-  border: 2px solid;
+  border: 1px solid;
   padding: 35px;
   width: 70vh;
   text-align: center;
-  background-color: honeydew;
+  background-image: linear-gradient(180deg, var(--first), var(--second));
   visibility: hidden;
   border-radius: 15px;
 }
