@@ -77,6 +77,27 @@ li {
   transform: scale(0.95);
 }
 
+.congo button {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+}
+
+.congo {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  border: 2px solid;
+  padding: 35px;
+  width: 70vh;
+  text-align: center;
+  background-color: honeydew;
+  visibility: hidden;
+  border-radius: 15px;
+}
+
 .box {
   visibility: visible;
 }

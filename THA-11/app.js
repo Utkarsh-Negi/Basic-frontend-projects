@@ -42,7 +42,10 @@ const questionaire = [
   },
 ];
 
+// All variables
 const optionbox = document.querySelectorAll('.option-area');
+
+const num = document.querySelector('#Number');
 const ques = document.querySelector('.querries');
 const option1 = document.querySelector('#option1');
 const option2 = document.querySelector('#option2');
@@ -50,7 +53,11 @@ const option3 = document.querySelector('#option3');
 const option4 = document.querySelector('#option4');
 
 const answer = document.querySelectorAll('.answer');
-const submit = document.querySelector('.button');
+const submit = document.querySelector('.sub-button');
+const congratulations = document.querySelector('.congo');
+
+//Event listeners
+submit.addEventListener('click', SubmitAns);
 
 //Functions
 
@@ -81,6 +88,7 @@ function final() {
 
   if (questionno >= questionaire.length) {
     console.log('Test Over');
+    reload();
   } else {
     console.log('More ques');
     loadquest();
@@ -103,4 +111,9 @@ function SubmitAns() {
   });
 }
 
-submit.addEventListener('click', SubmitAns);
+function reload() {
+  document.querySelector('.butt').textContent +=
+    correctAns + ' out of ' + questionaire.length;
+  document.querySelector('.quizbox').classList.remove('box');
+  congratulations.classList.add('box');
+}
