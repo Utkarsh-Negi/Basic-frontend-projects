@@ -55,6 +55,7 @@ const submit = document.querySelector('.button');
 //Functions
 
 let questionno = 0;
+let correctAns = 0;
 
 function loadquest() {
   num.innerHTML = 'No.' + (questionno + 1) + '   ';
@@ -72,4 +73,34 @@ function quizbox() {
   loadquest();
 }
 
-function final() {}
+function final() {
+  questionno++;
+  if (questionno == questionaire.length - 1) {
+    submit.innerHTML = 'End';
+  }
+
+  if (questionno >= questionaire.length) {
+    console.log('Test Over');
+  } else {
+    console.log('More ques');
+    loadquest();
+  }
+}
+
+function SubmitAns() {
+  if (questionno >= questionaire.length) return;
+  answer.forEach((ele) => {
+    if (ele.checked) {
+      if (ele.id === questionaire[questionno].ans) {
+        correctAns++;
+        console.log('Correct Ans');
+      } else {
+        console.log('Incorrect Ans');
+      }
+      final();
+    }
+    ele.checked = false;
+  });
+}
+
+submit.addEventListener('click', SubmitAns);

@@ -70,6 +70,13 @@ li {
   border-radius: 1rem;
 }
 
+.option-area {
+  transform: scale(1);
+}
+.option-area:hover {
+  transform: scale(0.95);
+}
+
 .box {
   visibility: visible;
 }
