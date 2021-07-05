@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Handling</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body onoffline="status()" onload="pageLoaded()" onresize="resize()">
-    <h1>Displaying Various events</h1>
     <div class="container">
-      <button id="btn">Click</button>
-      <!-- Keyboard events -->
-      <input
-        id="press"
-        placeholder="keys Up and Down"
-        onkeydown="keydown()"
-        onkeyup="keyUp()"
-      />
-      <input type="text" value="Click-Here" class="input" />
+      <h1>Displaying Various events</h1>
+      <ul>
+        <li class="list">
+          <h2>Click Event</h2>
+          <button id="btn">Click</button>
+        </li>
+        <!-- Keyboard events -->
+        <li class="list">
+          <h2>Keyboard Event</h2>
+          <input
+            id="press"
+            placeholder="keys Up and Down"
+            onkeydown="keydown()"
+            onkeyup="keyUp()"
+          />
+        </li>
+        <li class="list">
+          <h2>Focus and Non-Focus</h2>
+          <input type="text" value="Click-Here" class="input" />
+        </li>
+
+        <li>
+          <h2>Resizing Window</h2>
+          <div class="Resize">
+            Website is resized about <span class="resize">0</span> times
+          </div>
+        </li>
+      </ul>
     </div>
+
     <script src="event.js"></script>
   </body>
 </html>

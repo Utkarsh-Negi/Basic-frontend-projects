@@ -1,12 +1,13 @@
 var clicked = document.getElementById('btn');
 var focus_check = document.querySelector('.input');
 clicked.addEventListener('click', () => {
+  console.log('Hi you clicked me🤗');
   alert('Button is clicked');
 });
 
 function keyUp() {
   console.log('Key is released');
-  alert('Output is logged to console..');
+  alert('Output is logged to console..😎');
 }
 function keydown() {
   console.log('Key is pressed');
@@ -36,3 +37,10 @@ function resize() {
 function status() {
   console.log('you are offline right now');
 }
+
+val = 0;
+window.addEventListener('resize', () => {
+  let resize = document.querySelector('.resize');
+  val += 1;
+  resize.innerHTML = val;
+});
